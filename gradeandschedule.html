@@ -1,0 +1,53 @@
+<!DOCTYPE html> <!-- gradeandschedule.html -->
+<html lang="ko">
+  <head><meta charset="utf-8"/><meta name"viewpoint" content="width=device-width, initial-scale=1"/>
+    <style>
+      table, thead, tbody, tfoot, tr , th, td {border: 2px solid black; border-collapse: collapse; text-align: center;}  table {width:100%;}
+      .subject1 { background-color:lightgray; } .subject2{ background-color:#FAF4C0; } .subject3 { background-color:yellow; } 
+      .subject4 { background-color:blue; } .subject5{ background-color:orange; } .subject6{ background-color:green; }
+      th, td { text-align:center; width:50px; padding:10px; vertical-align:bottom;}
+      tr:nth-child(odd) {background-color:lightgray;}
+      th {background-color:gray; color:white;}
+      table.ex1 {table-layout:auto;} table.ex2 {table-layout:fixed;}
+    </style> 
+    <title>대학교 수강과목및 시간표</title></head>
+  <body>
+    <table>
+      <caption>&lt;표 1&gt; 시간표</caption>
+      <thead>
+        <tr><th>시간</th>  <th>월</th><th>화</th><th>수</th><th>목</th><th>금</th></tr></thead>
+      <tbody>
+        <tr><td>1교시</td><td rowspan="2" class="subject3">오토마타와응용</td><td rowspan="2" class="subject1">자료구조및실습</td><td></td><td></td><td></td></tr>
+        <tr><td>2교시</td><td></td><td rowspan="1" class="subject3">오토마타와응용</td><td></td></tr>
+        <tr><td>3교시</td><td rowspan="2" class="subject2">디지털논리회로</td><td></td><td rowspan="2" class="subject1">자료구조및실습</td><td rowspan="2" class="subject6">영어회화1</td><td></td></tr>
+        <tr><td>4교시</td><td></td><td></td></tr>
+        <tr><td>5교시</td><td></td><td rowspan="1" class="subject2">디지털논리회로</td><td></td><td></td><td></td></tr>
+        <tr><td>6교시</td><td></td><td rowspan="4" class="subject4">C++프로그래밍</td><td></td><td></td><td></td></tr>
+        <tr><td>7교시</td><td></td><td rowspan="2" class="subject5">인터넷 응용</td><td></td><td></td></tr>
+        <tr><td>8교시</td><td></td><td></td><td></td></tr>
+        <tr><td>9교시</td><td></td><td></td><td></td><td rowspan="1" class="subject5">인터넷 응용</td></tr></tbody>
+    </table>
+   <section><h3>성적</h3>
+      <p>대학교 성적</p>
+      <div style="overflow-x:auto;">
+        <table class="ex2">
+          <tr><th>이수구분</th><th>과목명</th><th>학점</th><th>등급</th><th>총점</th><th>평점</th><th>재이수여부</th></tr>
+          <tr><td>전공선택</td><td>이산수학</td><td>3</td><td>B+</td><td>38.4</td><td>3.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>공동체활동 I</td><td>1</td><td>P</td><td>100</td><td>0.00</td><td>x</td></tr>
+          <tr><td>교양</td><td>소프트웨어디자인</td><td>2</td><td>A+</td><td>95</td><td>4.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>영어강독</td><td>2</td><td>B0</td><td>73.6</td><td>3.00</td><td>x</td></tr>
+          <tr><td>교양</td><td>글쓰기기초</td><td>2</td><td>A+</td><td>97</td><td>4.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>비전탐색</td><td>1</td><td>P</td><td>100</td><td>0.00</td><td>x</td></tr>
+          <tr><td>교양</td><td>동양고전의지혜</td><td>2</td><td>B+</td><td>87.5</td><td>3.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>스포츠건강체력</td><td>1</td><td>P</td><td>100</td><td>0.00</td><td>x</td></tr>
+          <tr><td>교양</td><td>미래를여는나노기술</td><td>2</td><td>A+</td><td>100</td><td>4.50</td><td>x</td></tr>
+          <tr><td>전공필수</td><td>C프로그래밍</td><td>3</td><td>B0</td><td>61.9</td><td>3.00</td><td>x</td></tr>
+          <tr><td>교양</td><td>인문과바이오산업의만남</td><td>3</td><td>B+</td><td>78</td><td>3.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>인간행동과기업조직</td><td>2</td><td>A+</td><td>98.5</td><td>4.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>공동체활동 II</td><td>1</td><td>P</td><td>100</td><td>0.00</td><td>x</td></tr>
+          <tr><td>교양</td><td>물리학2</td><td>2</td><td>A+</td><td>92.4</td><td>4.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>영어회화1</td><td>2</td><td>C+</td><td>63.4</td><td>2.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>글쓰기심화</td><td>2</td><td>A+</td><td>92.3</td><td>4.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>예술,문화의융합적이해</td><td>3</td><td>B+</td><td>87</td><td>3.50</td><td>x</td></tr>
+          <tr><td>교양</td><td>발표와토론</td><td>2</td><td>B+</td><td>88.9</td><td>3.50</td><td>x</td></tr>
+        </table></div></section></body></html>
